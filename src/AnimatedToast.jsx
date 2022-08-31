@@ -1,5 +1,4 @@
 import { Toast } from "flowbite-react";
-import { motion } from "framer-motion";
 
 export const AnimatedToast = (props) => {
   const IconToast = props.Icon;
