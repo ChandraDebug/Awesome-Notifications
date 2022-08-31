@@ -1,16 +1,7 @@
-import { Button } from "flowbite-react";
 import React, { useState, useEffect } from "react";
-import {
-  HiCheck,
-  HiExclamation,
-  HiX,
-  HiOutlineEmojiHappy,
-  HiOutlineEmojiSad,
-} from "react-icons/hi";
+import { HiCheck, HiExclamation, HiX } from "react-icons/hi";
 import { AnimatedToast } from "./AnimatedToast";
 import { motion, AnimatePresence } from "framer-motion";
-
-import { Content } from "./Content";
 import * as Hi from "react-icons/hi";
 import { Input } from "./Input";
 
