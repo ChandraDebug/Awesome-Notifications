@@ -56,11 +56,7 @@ export const Input = (props) => {
             pill={true}
             type='submit'>
             Open Notification
-            {props.button ? (
-              <HiOutlineEmojiHappy className='ml-2 h-5 w-5' />
-            ) : (
-              <HiOutlineEmojiSad className='ml-2 h-5 w-5' />
-            )}
+            <HiOutlineEmojiHappy className='ml-2 h-5 w-5' />
           </Button>
           <Button
             className='mt-2'
@@ -69,11 +65,7 @@ export const Input = (props) => {
             pill={true}
             onClick={props.popToast}>
             Close Notification
-            {props.button ? (
-              <HiOutlineEmojiHappy className='ml-2 h-5 w-5' />
-            ) : (
-              <HiOutlineEmojiSad className='ml-2 h-5 w-5' />
-            )}
+            <HiOutlineEmojiSad className='ml-2 h-5 w-5' />
           </Button>
         </Button.Group>
       </form>

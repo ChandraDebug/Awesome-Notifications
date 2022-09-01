@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { HiCheck, HiExclamation, HiX } from "react-icons/hi";
+import React, { useState } from "react";
+import { HiCheck, HiExclamation } from "react-icons/hi";
 import { AnimatedToast } from "./AnimatedToast";
 import { motion, AnimatePresence } from "framer-motion";
 import * as Hi from "react-icons/hi";
 import { Input } from "./Input";
 
 function App() {
-  const [button, setButton] = useState(true);
-
   const IconSet = {
     HiCheck: HiCheck,
     HiExclamation: HiExclamation,
@@ -61,12 +59,7 @@ function App() {
         )}
       </ul>
       <div className='absolute right-1/2  top-1/2'>
-        <Input
-          handleSubmit={handleSubmit}
-          popToast={popToast}
-          form={form}
-          button={button}
-        />
+        <Input handleSubmit={handleSubmit} popToast={popToast} form={form} />
       </div>
     </div>
   );
